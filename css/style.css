@@ -17,7 +17,13 @@ h2{
 /* HEADER */
 #search-bar .row{
     height: 80px;
-    line-height: 80px;
+}
+.my-logo-big{
+    width: 150px;
+}
+.my-logo-small{
+    width: 60px;
+    display: none;
 }
 .my-bell{
    color: #ff8f00;
@@ -40,35 +46,69 @@ aside{
     width: 150px;
     min-height: 150px;
 }
+.my-admin{
+    transition: 0.2s;
+}
 nav ul li{
     transition: 0.2s;
 }
-nav li:hover{
+nav li:hover,
+.my-admin:hover{
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* contenuto dx */
+/* main header */
 #main-header{
     background-color: var(--bg-color-2);
 }
+.my-badge{
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+}
+.my-badge:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+}
 
+/* prossime classi */
+table tbody tr:hover{
+    cursor: pointer;
+    background-color: var(--bg-color-gray-1);
+
+}
+.my-symbol{
+    background-color: orange;
+}
 
 
 /* DEBUG */
-/* 
-header .row > div{
-    border: 1px solid black;
-} */
 
 
 
 
-
-
+/* RESPONSIVE */
+/* desktop -> tablet */
 @media screen and (max-width: 992px) {
     section .row > div{
         display: block;
         width: 100%;
+    }
+    aside{
+        width: 60px;
+        text-align: center;
+    }
+    main{
+        width: calc(100% - 60px);
+    }
+    a:not(.my-bell),
+    .my-logo-big{
+        display: none;
+    }
+    .my-logo-small,
+    .my-badge-special{
+        display: block;
     }
 }

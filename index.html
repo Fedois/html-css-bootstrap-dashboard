@@ -16,31 +16,46 @@
     <header id="search-bar">
         <div class="container-fluid">
 
-            <div class="row justify-content-center">
-                <div class="col">
-                    <img src="img/logo.svg" class="w-100" alt="logo">
+            <div class="row align-items-center">
+                <div class="col flex-grow-0">
+                    <img src="img/logo.svg" class="my-logo-big" alt="logo">
+                    <img src="img/mobile-logo.png" class="my-logo-small" alt="logo">
                 </div>
                 
-                <div class="col-9">
-                    <input class="form-control mt-4" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
+                <div class="col flex-grow-1">
+                    <input class="form-control" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
                 </div>
                 
-                <div class="col">
-                    <ul>
-                        <li class="d-inline-block px-2">
-                            <a href="#"><i class="fa-solid fa-list"></i></a> 
+                <div class="col flex-grow-0">
+                    <ul class="d-flex">
+                        <li class="px-2">
+                            <a href="#" class="text-dark">
+                              <i class="fa-solid fa-list"></i>
+                            </a> 
                         </li>
                        
-                        <li class="d-inline-block px-2">
-                            <a href="#"><i class="fa-solid fa-circle-question"></i></a>
+                        <li class="px-2">
+                            <a href="#" class="text-dark">
+                              <i class="fa-solid fa-circle-question"></i>
+                            </a>
                         </li>
                         
-                        <li class="d-inline-block px-2">
-                            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                        <li class="px-2">
+                            <a href="#" class="text-dark">
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
                         </li>
                         
-                        <li class="d-inline-block px-2">
-                            <a href="#" class="my-bell"><i class="fa-solid fa-bell"></i></a>
+                        <li class="px-2">
+                            <button class="btn m-0 p-0 my-bell" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-bell"></i>
+                            </button>
+                            
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Profilo</a></li>
+                              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                              <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -57,27 +72,42 @@
             <div class="container-fluid h-100">
                 
                 <div class="h-100 row flex-column">
-                    <nav class="col">
-                        <ul class="p-0 mt-4">
-                            <li class="text-white fs-5 p-2 bordered-4">
+                    <nav class="col p-0">
+                        <ul class=" text-white p-2 mt-4">
+                            <li class="fs-5 p-2">
                                 <i class="fa-solid fa-house"></i>
-                                <a class="text-decoration-none text-white ps-2" href="Home">Home</a>
+                                
+                                <a class="text-decoration-none text-white ps-2" href="Home">
+                                  Home
+                                </a>
                             </li>
                             
-                            <li class="text-white fs-5 p-2 bordered-4">
+                            <li class="fs-5 p-2">
                                 <i class="fa-solid fa-chart-simple"></i>
-                                <a class="text-decoration-none text-white ps-2" href="Stats">Stats</a>
+                                
+                                <a class="text-decoration-none text-white ps-2" href="Stats">
+                                  Stats
+                                </a>
                             </li>
                             
-                            <li class="text-white fs-5 p-2 bordered-4">
+                            <li class="fs-5 p-2">
                                 <i class="fa-solid fa-signal"></i>
-                                <a class="text-decoration-none text-white ps-2" href="Signal">Signal</a>
+                                
+                                <a class="text-decoration-none text-white ps-2" href="Signal">
+                                  Signal
+                                </a>
                             </li>
                         </ul>
                     </nav>
                     
-                    <div class="text-white mb-4 px-3 fs-5">
-                        <i class="fa-solid fa-gear"></i> Admin
+                    <div class="text-white p-2 mb-4">
+                      <div class="my-admin fs-5 p-2">
+                          <i class="fa-solid fa-gear"></i> 
+                          
+                          <a href="#" class="text-decoration-none text-white ps-4">
+                            Admin
+                          </a>
+                      </div>
                     </div>
                 </div>
             
@@ -86,20 +116,31 @@
 
         <!-- contenuto dx -->
         <main>
+          <!-- header del main -->
             <header id="main-header">
                 <div class="container-fluid">
                     
                     <div class="row text-white py-4">
-                        <div class="col-6 pt-1">
+                      <div class="col-6 pt-1">
+                          <div class="my-title">
                             <h1 class="d-inline-block">Boolean</h1>
-                            <span class="badge rounded-pill text-bg-secondary fs-6">Piano blaze</span>
+                            <span class="my-badge badge rounded-pill fs-6 ms-2">Piano blaze</span>
+                          </div>
 
-                            <br>
+                          <div class="my-app">
+                            <div class="d-inline-block">
+                              <span class="my-badge badge mt-1 rounded-pill fs-6">3 app</span> >>
+                              <span class="my-badge-special badge mt-1 rounded-pill fs-6 d-none">
+                                <i class="fa-solid fa-plus"></i>
+                              </span>
+                            </div>
 
-                            <span class="badge mt-1 rounded-pill text-bg-secondary fs-6">3 app</span> >>
-                            <span class="badge mt-1 rounded-pill text-bg-secondary fs-6">Boolean mobile app</span>
-                            <span class="badge mt-1 rounded-pill text-bg-secondary fs-6">Boolean web app</span>
-                            <span class="badge mt-1 rounded-pill text-bg-secondary fs-6">Boolean blog app</span>
+                            <div class="d-inline-block">
+                              <span class="my-badge badge mt-1 rounded-pill fs-6">Boolean mobile app</span>
+                              <span class="my-badge badge mt-1 rounded-pill fs-6">Boolean web app</span>
+                              <span class="my-badge badge mt-1 rounded-pill fs-6">Boolean blog app</span>
+                            </div>
+                          </div>
                         </div>
                         
                         <div class="col-4">
@@ -137,7 +178,7 @@
                                         <table class="table">
                                             <thead>
                                               <tr>
-                                                <th>Nome</th>
+                                                <th class="w-50">Nome</th>
                                                 <th>Data inizio</th>
                                                 <th>ROI</th>
                                                 <th>Stato</th>
@@ -147,52 +188,108 @@
                                             
                                             <tbody>
                                               <tr>
-                                                <th>Classe</th>
+                                                <th>
+                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
+                                                  Classe 75
+                                                </th>
                                                 <td>15 febbraio 2021</td>
                                                 <td>20%</td>
                                                 <td>done</td>
+                                                <td>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                </td>
                                               </tr>
                                               <tr>
-                                                <th>Classe</th>
-                                                <td>15 febbraio 2021</td>
+                                                <th>
+                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
+                                                  Classe 76
+                                                </th>
+                                                <td>16 febbraio 2021</td>
                                                 <td>20%</td>
                                                 <td>done</td>
+                                                <td>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                </td>
                                               </tr>
                                               <tr>
-                                                <th>Classe</th>
-                                                <td>15 febbraio 2021</td>
+                                                <th>
+                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
+                                                  Classe 77
+                                                </th>
+                                                <td>17 febbraio 2021</td>
                                                 <td>20%</td>
                                                 <td>done</td>
+                                                <td>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                </td>
                                               </tr>
                                               <tr>
-                                                <th>Classe</th>
-                                                <td>15 febbraio 2021</td>
+                                                <th>
+                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
+                                                  Classe 78
+                                                </th>
+                                                <td>18 febbraio 2021</td>
                                                 <td>20%</td>
                                                 <td>done</td>
+                                                <td>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                </td>
                                               </tr>
                                               <tr>
-                                                <th>Classe</th>
-                                                <td>15 febbraio 2021</td>
+                                                <th>
+                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
+                                                  Classe 79
+                                                </th>
+                                                <td>19 febbraio 2021</td>
                                                 <td>20%</td>
                                                 <td>done</td>
+                                                <td>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                </td>
                                               </tr>
                                               <tr>
-                                                <th>Classe</th>
-                                                <td>15 febbraio 2021</td>
+                                                <th>
+                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
+                                                  Classe 80
+                                                </th>
+                                                <td>20 febbraio 2021</td>
                                                 <td>20%</td>
                                                 <td>done</td>
+                                                <td>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                </td>
                                               </tr>
                                               <tr>
-                                                <th>Classe</th>
-                                                <td>15 febbraio 2021</td>
+                                                <th>
+                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
+                                                  Classe 81
+                                                </th>
+                                                <td>21 febbraio 2021</td>
                                                 <td>20%</td>
                                                 <td>done</td>
+                                                <td>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                </td>
                                               </tr>
                                               <tr>
-                                                <th>Classe</th>
-                                                <td>15 febbraio 2021</td>
+                                                <th>
+                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
+                                                  Classe 82
+                                                </th>
+                                                <td>22 febbraio 2021</td>
                                                 <td>20%</td>
                                                 <td>done</td>
+                                                <td>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                </td>
                                               </tr>
                                             </tbody>
                                         </table>
@@ -214,8 +311,7 @@
                                               
                                               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                                </div>
+                                                  Clicca sul "+" in alto nella sezione blu                                                </div>
                                               </div>
                                             </div>
                                             
@@ -228,7 +324,7 @@
                                               
                                               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                  Clicca sulla campanellina
                                                 </div>
                                               </div>
                                             </div>
@@ -241,9 +337,7 @@
                                               </h3>
                                               
                                               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                                </div>
+                                                <div class="accordion-body"></div>
                                               </div>
                                             </div>
                                         </div>
@@ -263,21 +357,21 @@
                                         <div class="form-check border py-2 m-0">
                                             <input class="form-check-input ms-1" type="checkbox" value="" id="flexCheckDefault">
                                             <label class="form-check-label ms-2" for="flexCheckDefault">
-                                              Default checkbox
+                                              Kickoff nuove classi
                                             </label>
                                         </div>
                                         
                                         <div class="form-check border py-2 m-0">
                                             <input class="form-check-input ms-1" type="checkbox" value="" id="flexCheckChecked" checked>
                                             <label class="form-check-label ms-2" for="flexCheckChecked">
-                                              Checked checkbox
+                                              Lezione su bootstarp 5 in classe #75
                                             </label>
                                         </div>
 
                                         <div class="form-check border py-2 m-0">
                                             <input class="form-check-input ms-1" type="checkbox" value="" id="flexCheckChecked" checked>
                                             <label class="form-check-label ms-2" for="flexCheckChecked">
-                                              Checked checkbox
+                                              Controllare username in github studenti
                                             </label>
                                         </div>
                                     </div>
