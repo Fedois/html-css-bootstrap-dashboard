@@ -19,6 +19,7 @@ aside{
 main{
     background-color:blue;
     width: calc(100% - 150px);
+    overflow: auto;
 }
 aside div > *{
     background-color: aquamarine;
@@ -33,4 +34,11 @@ nav{
 
 .admin{
     height: 50px;
+}
+section .container-fluid > div{
+    height: 500px;
+    border: 1px solid black;
+}
+.my-box{
+    background-color: red;
 }
