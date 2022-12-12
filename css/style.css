@@ -1,0 +1,36 @@
+/* DEBUG */
+header{
+    background-color: wheat;
+    height: 10vh;
+}
+#main-content{
+    background-color: black;
+    height: 90vh;
+}
+header .row > div{
+    border: 1px solid black;
+    height: 10vh;
+}
+aside{
+    background-color: wheat;
+    width: 150px;
+    min-height: 150px;
+}
+main{
+    background-color:blue;
+    width: calc(100% - 150px);
+}
+aside div > *{
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+nav ul{
+    list-style: none;
+}
+nav{
+    height: calc(100% - 50px);
+}
+
+.admin{
+    height: 50px;
+}
