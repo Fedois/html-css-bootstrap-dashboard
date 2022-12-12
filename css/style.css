@@ -4,11 +4,20 @@ ul{
     margin: 0;
     padding: 0;
 }
+:root{
+    --bg-color-1: #051e34 ; 
+    --bg-color-2: #1b72e8;
+    --bg-color-gray-1: #f7f7f7;
+    --bg-color-gray-2: #f8f9fa;
+}
+h2{
+    background-color: var(--bg-color-gray-1);
+}
 
 /* HEADER */
 #search-bar .row{
-    height: 10vh;
-    line-height: 10vh;
+    height: 80px;
+    line-height: 80px;
 }
 
 /* MAIN */
@@ -17,13 +26,14 @@ main{
     overflow: auto;
 }
 #main-content{
-    height: 90vh;
+    height: calc(100vh - 80px);
+    background-color: var(--bg-color-3);
 }
 
 /* contenuto sx */
 /* aside */
 aside{
-    background-color: black;
+    background-color: var(--bg-color-1);
     width: 150px;
     min-height: 150px;
 }
@@ -37,7 +47,7 @@ nav li:hover{
 
 /* contenuto dx */
 #main-header{
-    background-color: blue;
+    background-color: var(--bg-color-2);
 }
 
 
