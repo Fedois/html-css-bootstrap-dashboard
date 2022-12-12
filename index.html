@@ -5,48 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="">
+    <!-- INIZIO HEADER -->
+    <header id="search-bar">
         <div class="container-fluid">
 
             <div class="row">
-                <div class="col-2">logo</div>
-                <div class="col-8">search</div>
-                <div class="col-2">input</div>
+                <div class="col-1">
+                    <img src="img/logo.svg" class="w-100" alt="logo">
+                </div>
+                
+                <div class="col-10">
+                    <input class="form-control mt-4" type="search" placeholder="Prova a cercare lezioni di Laravel">
+                </div>
+                
+                <div class="col-1">input</div>
             </div>
+        
         </div>
     </header>
 
+    <!-- INIZIO CONTENUTO PRINCIPALE -->
     <div id="main-content" class="d-flex">
+
+        <!-- contenuto sx -->
         <aside>
             <div class="container-fluid h-100">
+                
                 <div class="h-100 row flex-column">
                     <nav class="col">
-                        <ul class="p-0">
-                            <li>ciao</li>
-                            <li>ciao</li>
-                            <li>ciao</li>
+                        <ul class="p-0 mt-4">
+                            <li class="text-white fs-5 p-2 bordered-4">
+                                <i class="fa-solid fa-house"></i>
+                                <a class="text-decoration-none text-white ps-2" href="Home">Home</a>
+                            </li>
+                            
+                            <li class="text-white fs-5 p-2 bordered-4">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <a class="text-decoration-none text-white ps-2" href="Stats">Stats</a>
+                            </li>
+                            
+                            <li class="text-white fs-5 p-2 bordered-4">
+                                <i class="fa-solid fa-signal"></i>
+                                <a class="text-decoration-none text-white ps-2" href="Signal">Signal</a>
+                            </li>
                         </ul>
                     </nav>
                     
-                    <div class="admin">Admin</div>
+                    <div class="text-white mb-4 px-3 fs-5">
+                        <i class="fa-solid fa-gear"></i> Admin
+                    </div>
                 </div>
+            
             </div>
-           
         </aside>
 
+        <!-- contenuto dx -->
         <main>
-            <header>
+            <header id="main-header">
                 <div class="container-fluid">
                     
-                    <div class="row">
-                        <div class="col-6"></div>
-                        <div class="col-4"></div>
-                        <div class="col-2"></div>
+                    <div class="row text-white py-2">
+                        <div class="col-6 pt-2">
+                            <h1 class="d-inline-block">Boolean</h1>
+                            <span class="badge rounded-pill text-bg-secondary fs-6">Piano blaze</span>
+
+                            <br>
+
+                            <span class="badge rounded-pill text-bg-secondary fs-6">3 app</span> >>
+                            <span class="badge rounded-pill text-bg-secondary fs-6">Boolean mobile app</span>
+                            <span class="badge rounded-pill text-bg-secondary fs-6">Boolean web app</span>
+                            <span class="badge rounded-pill text-bg-secondary fs-6">Boolean blog app</span>
+                        </div>
+                        <div class="col-4">
+                            <p class="fs-5 m-0">
+                                Studenti online negli ultimip0 minuti
+                            </p>
+
+                            <span class="fs-1">125</span>
+                        </div>
+                        <div class="col-2 pt-2">
+                            <p class="fs-5">Nuovo studente</p>
+                        </div>
                     </div>
                 
                 </div>
@@ -57,11 +103,12 @@
                     
                     <div class="row">
                         <div class="col-8">
-                            <div class="container-fluid pt-3">
-                                <div>
-                                    <div class="my-box">
-                                        <h2>PROSSIME CLASSI</h2>
-                                        
+                            <div class="container-fluid">
+                                
+                                <div class="my-box border my-3">
+                                    <h2 class="border-bottom pb-3 ps-2">Prossime classi</h2>
+
+                                    <div class="my-box-content p-2">
                                         <table class="table">
                                             <thead>
                                               <tr>
@@ -82,7 +129,13 @@
                                               </tr>
                                               <tr>
                                                 <th>Classe</th>
-                                                <td>15 febbraio 2021b</td>
+                                                <td>15 febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td>done</td>
+                                              </tr>
+                                              <tr>
+                                                <th>Classe</th>
+                                                <td>15 febbraio 2021</td>
                                                 <td>20%</td>
                                                 <td>done</td>
                                               </tr>
@@ -100,19 +153,13 @@
                                               </tr>
                                               <tr>
                                                 <th>Classe</th>
-                                                <td>15 febbraio 2021b</td>
-                                                <td>20%</td>
-                                                <td>done</td>
-                                              </tr>
-                                              <tr>
-                                                <th>Classe</th>
                                                 <td>15 febbraio 2021</td>
                                                 <td>20%</td>
                                                 <td>done</td>
                                               </tr>
                                               <tr>
                                                 <th>Classe</th>
-                                                <td>15 febbraio 2021b</td>
+                                                <td>15 febbraio 2021</td>
                                                 <td>20%</td>
                                                 <td>done</td>
                                               </tr>
@@ -123,22 +170,119 @@
                                                 <td>done</td>
                                               </tr>
                                             </tbody>
-                                          </table>
+                                        </table>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="my-box"></div>
+                                
+                                <div class="my-box border my-3">
+                                    <h2 class="border-bottom pb-3 ps-2">F.A.Q.</h2>
+
+                                    <div class="my-box-content">
+                                        <div class="accordion">
+                                            <div class="accordion-item">
+                                              <h3 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                  Come aggiungere un nuovo studente?
+                                                </button>
+                                              </h3>
+                                              
+                                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            
+                                            <div class="accordion-item">
+                                              <h3 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                              </h3>
+                                              
+                                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            
+                                            <div class="accordion-item">
+                                              <h3 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                  Posso usare questa dashboard da mobile?
+                                                </button>
+                                              </h3>
+                                              
+                                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                            
                             </div>
                         </div>
+                        
                         <div class="col-4">
-                            <div class="container-fluid pt-3">
-                                <div>
-                                    <div class="my-box"></div>
+                            <div class="container-fluid">
+                                
+                                <div class="my-box border my-3">
+                                    <h2 class="border-bottom pb-3 ps-2">Todo</h2>
+
+                                    <div class="my-box-content p-3">
+                                        <div class="form-check border py-2 m-0">
+                                            <input class="form-check-input ms-1" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label ms-2" for="flexCheckDefault">
+                                              Default checkbox
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="form-check border py-2 m-0">
+                                            <input class="form-check-input ms-1" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label ms-2" for="flexCheckChecked">
+                                              Checked checkbox
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check border py-2 m-0">
+                                            <input class="form-check-input ms-1" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label ms-2" for="flexCheckChecked">
+                                              Checked checkbox
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <div class="my-box"></div>
+                                
+                                <div class="my-box border my-3">
+                                    <div class="my-box-content p-3">
+                                        <ul class="border">
+                                            <li class="border p-2">
+                                                <img src="img/stats.jpeg" class="w-100" alt="stats">
+                                                
+                                                <h3>Utenti attivi</h3>
+    
+                                                <p>Lista degli utenti attivi negli ultimi mesi</p>
+                                            </li>
+                                            <li class="border p-2">
+                                                Gennaio: 1200
+                                            </li>
+                                            <li class="border p-2">
+                                                Febbraio: 800
+                                            </li>
+                                            <li class="border p-2">
+                                                Marzo: 1500
+                                            </li>
+                                            <li class="border p-2">
+                                                <a href="#">Visualizza report approfondito</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -146,6 +290,26 @@
                 </div>
             </section>
         </main>
-    </div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                       
+                        
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>

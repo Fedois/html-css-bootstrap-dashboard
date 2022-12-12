@@ -1,44 +1,61 @@
-/* DEBUG */
-header{
-    background-color: wheat;
+/* GENERAL */
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+#search-bar .row{
     height: 10vh;
+    line-height: 10vh;
 }
-#main-content{
-    background-color: black;
-    height: 90vh;
-}
-header .row > div{
-    border: 1px solid black;
-    height: 10vh;
-}
-aside{
-    background-color: wheat;
-    width: 150px;
-    min-height: 150px;
-}
+
+/* MAIN */
 main{
-    background-color:blue;
     width: calc(100% - 150px);
     overflow: auto;
 }
-aside div > *{
-    background-color: aquamarine;
-    border: 1px solid black;
-}
-nav ul{
-    list-style: none;
-}
-nav{
-    height: calc(100% - 50px);
+#main-content{
+    height: 90vh;
 }
 
-.admin{
-    height: 50px;
+/* contenuto sx */
+/* aside */
+aside{
+    background-color: black;
+    width: 150px;
+    min-height: 150px;
 }
-section .container-fluid > div{
-    height: 500px;
+nav ul li{
+    transition: 0.2s;
+}
+nav li:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* contenuto dx */
+#main-header{
+    background-color: blue;
+}
+
+
+
+/* DEBUG */
+/* 
+header .row > div{
     border: 1px solid black;
-}
-.my-box{
-    background-color: red;
+} */
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    section .row > div{
+        display: block;
+        width: 100%;
+    }
 }
