@@ -9,6 +9,7 @@ ul{
     --bg-color-2: #1b72e8;
     --bg-color-gray-1: #f7f7f7;
     --bg-color-gray-2: #f8f9fa;
+    --bg-color-gray-3: lightgray;
 }
 h2{
     background-color: var(--bg-color-gray-1);
@@ -24,6 +25,9 @@ h2{
 .my-logo-small{
     width: 60px;
     display: none;
+}
+.my-bg-search{
+    background-color: var(--bg-color-gray-3);
 }
 .my-bell{
    color: #ff8f00;
@@ -62,7 +66,7 @@ nav li:hover,
 }
 
 /* contenuto DX */
-/* main header */
+/* header */
 #main-header{
     background-color: var(--bg-color-2);
 }
@@ -81,11 +85,14 @@ nav li:hover,
 .app-plus{
     display: none;
 }
+.my-off{
+    width: 70% !important;
+}
 
 /* prossime classi */
 table tbody tr:hover{
     cursor: pointer;
-    background-color: lightgray;
+    background-color: var(--bg-color-gray-3);
 }
 table tbody td,
 table th:not(.nome){
@@ -123,6 +130,9 @@ table th:not(.nome){
     .app-plus{
         display: inline-block;
     }
+    .my-off{
+        width: 100% !important;
+    }
 }
 
 /* large -> medium */
@@ -130,7 +140,6 @@ table th:not(.nome){
     .data-inizio{
         display: none;
     }
-    
 }
 
 /* medium -> small */
