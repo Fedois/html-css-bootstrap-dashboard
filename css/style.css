@@ -147,5 +147,11 @@ table tbody td:not(.nome){
     .ROI{
         display: none;
     }
+    .nome{
+        width: auto !important;
+    }
+    .my-class-n{
+        display: block;
+    }
     
 }
