@@ -86,7 +86,7 @@ nav li:hover,
     display: none;
 }
 .my-off{
-    width: 70% !important;
+    width: 50% !important;
 }
 
 /* prossime classi */
@@ -94,8 +94,8 @@ table tbody tr:hover{
     cursor: pointer;
     background-color: var(--bg-color-gray-3);
 }
-table tbody td,
-table th:not(.nome){
+table thead th:not(.nome),
+table tbody td:not(.nome){
     text-align: center;
 }
 .my-symbol{
