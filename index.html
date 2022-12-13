@@ -23,7 +23,16 @@
                 </div>
                 
                 <div class="col flex-grow-1">
-                    <input class="form-control" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
+                    <!-- <input class="form-control" type="search" placeholder="Prova a cercare: Lezioni di Laravel"> -->
+                    <form>
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        
+                        <input type="search" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel">
+                      </div>
+                    </form>
                 </div>
                 
                 <div class="col flex-grow-0">
@@ -47,9 +56,9 @@
                         </li>
                         
                         <li class="px-2">
-                            <button class="btn m-0 p-0 my-bell" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a href="#" class="my-bell border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                               <i class="fa-solid fa-bell"></i>
-                            </button>
+                            </a>
                             
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#">Profilo</a></li>
@@ -71,7 +80,7 @@
         <aside>
             <div class="container-fluid h-100">
                 
-                <div class="h-100 row flex-column">
+                <div class="row h-100 flex-column">
                     <nav class="col p-0">
                         <ul class=" text-white p-2 mt-4">
                             <li class="fs-5 p-2">
@@ -116,34 +125,36 @@
 
         <!-- contenuto dx -->
         <main>
-          <!-- header del main -->
+          <!-- main header -->
             <header id="main-header">
                 <div class="container-fluid">
                     
                     <div class="row text-white py-4">
-                      <div class="col-6 pt-1">
+                      <div class="col-12 col-md-4 col-lg-6 pt-1">
                           <div class="my-title">
                             <h1 class="d-inline-block">Boolean</h1>
                             <span class="my-badge badge rounded-pill fs-6 ms-2">Piano blaze</span>
                           </div>
 
-                          <div class="my-app">
-                            <div class="d-inline-block">
-                              <span class="my-badge badge mt-1 rounded-pill fs-6">3 app</span> >>
-                              <span class="my-badge-special badge mt-1 rounded-pill fs-6 d-none">
+                          <div class="my-app d-flex">
+                            <div class="my-app-1">
+                              <span class="my-badge badge mt-1 rounded-pill fs-6">3 app</span>
+                              <i class="fa-solid fa-angles-right"></i>
+                              <span class="my-badge badge mt-1 rounded-pill fs-6">
                                 <i class="fa-solid fa-plus"></i>
                               </span>
                             </div>
 
-                            <div class="d-inline-block">
+                            <div class="my-app-2 ms-1">
                               <span class="my-badge badge mt-1 rounded-pill fs-6">Boolean mobile app</span>
                               <span class="my-badge badge mt-1 rounded-pill fs-6">Boolean web app</span>
                               <span class="my-badge badge mt-1 rounded-pill fs-6">Boolean blog app</span>
                             </div>
                           </div>
                         </div>
+
                         
-                        <div class="col-4">
+                        <div class="col-12 col-md-4 col-lg-4">
                             <p class="fs-5 m-0">
                                 Studenti online negli ultimi 30 minuti
                             </p>
@@ -151,12 +162,46 @@
                             <span class="fs-1">125</span>
                         </div>
                         
-                        <div class="col-2 pt-1">
+                        <div class="col-12 order-first col-md-4 order-md-last col-lg-2 pt-1">
                             <p class="fs-5 d-inline-block">Nuovo studente</p>
 
-                            <button type="button" class="btn btn-outline-light ms-3">
-                                <i class="fa-solid fa-plus"></i>
+                            <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                              <i class="fa-solid fa-plus"></i>
                             </button>
+
+                            <div class="offcanvas offcanvas-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                              <div class="offcanvas-header">
+                                <h5 class="offcanvas-title text-dark" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                              
+                              <div class="offcanvas-body text-dark">
+                                <div class="mb-3">
+                                  <label for="nome" class="form-label">Nome</label>
+                                  <input type="text" class="form-control" id="nome">
+                                </div>
+
+                                <div class="mb-3">
+                                  <label for="cognome" class="form-label">cognome</label>
+                                  <input type="text" class="form-control" id="cognome">
+                                </div>
+
+                                <div class="input-group flex-nowrap mb-3">
+                                  <span class="input-group-text" id="addon-wrapping">@</span>
+                                  <input type="mail" class="form-control" aria-label="Username">
+                                </div>
+
+                                <div class="mb-3">
+                                  <label for="password" class="form-label">password</label>
+                                  <input type="password" class="form-control" id="password">
+                                </div>
+                                
+                                <div class="mb-3">
+                                  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                              </div>
+                            </div>
                         </div>
                     </div>
                 
@@ -168,7 +213,7 @@
                     
                     <!-- prossime classi -->
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-12 col-lg-8">
                             <div class="container-fluid">
                                 
                                 <div class="my-box border my-3">
@@ -178,9 +223,9 @@
                                         <table class="table">
                                             <thead>
                                               <tr>
-                                                <th class="w-50">Nome</th>
-                                                <th>Data inizio</th>
-                                                <th>ROI</th>
+                                                <th class="nome w-50">Nome</th>
+                                                <th class="data-inizio">Data inizio</th>
+                                                <th class="ROI">ROI</th>
                                                 <th>Stato</th>
                                                 <th>Azioni</th>
                                               </tr>
@@ -188,107 +233,130 @@
                                             
                                             <tbody>
                                               <tr>
-                                                <th>
+                                                <th class="nome">
                                                   <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
                                                   Classe 75
                                                 </th>
-                                                <td>15 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>done</td>
+                                                <td class="data-inizio">15 febbraio 2021</td>
+                                                <td class="ROI">20%</td>
                                                 <td>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="badge text-bg-success">done</span>
+                                                </td>
+                                                <td>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
                                                 </td>
                                               </tr>
+                                              
                                               <tr>
-                                                <th>
+                                                <th class="nome">
                                                   <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
                                                   Classe 76
                                                 </th>
-                                                <td>16 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>done</td>
+                                                <td class="data-inizio">16 febbraio 2021</td>
+                                                <td class="ROI">20%</td>
                                                 <td>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="badge text-bg-success">done</span>
+                                                </td>
+                                                <td>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
                                                 </td>
                                               </tr>
+                                              
                                               <tr>
-                                                <th>
+                                                <th class="nome">
                                                   <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
                                                   Classe 77
                                                 </th>
-                                                <td>17 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>done</td>
+                                                <td class="data-inizio">17 febbraio 2021</td>
+                                                <td class="ROI">20%</td>
                                                 <td>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="badge text-bg-warning">process</span>
+                                                </td>
+                                                <td>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
                                                 </td>
                                               </tr>
+                                              
                                               <tr>
-                                                <th>
+                                                <th class="nome">
                                                   <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
                                                   Classe 78
                                                 </th>
-                                                <td>18 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>done</td>
+                                                <td class="data-inizio">18 febbraio 2021</td>
+                                                <td class="ROI">20%</td>
                                                 <td>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="badge text-bg-success">done</span>
+                                                </td>
+                                                <td>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
                                                 </td>
                                               </tr>
+                                              
                                               <tr>
-                                                <th>
+                                                <th class="nome">
                                                   <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
                                                   Classe 79
                                                 </th>
-                                                <td>19 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>done</td>
+                                                <td class="data-inizio">19 febbraio 2021</td>
+                                                <td class="ROI">20%</td>
                                                 <td>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="badge text-bg-danger">failed</span>
+                                                </td>
+                                                <td>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
                                                 </td>
                                               </tr>
+                                              
                                               <tr>
-                                                <th>
+                                                <th class="nome">
                                                   <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
                                                   Classe 80
                                                 </th>
-                                                <td>20 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>done</td>
+                                                <td class="data-inizio">20 febbraio 2021</td>
+                                                <td class="ROI">20%</td>
                                                 <td>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="badge text-bg-success">done</span>
+                                                </td>
+                                                <td>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
                                                 </td>
                                               </tr>
+                                              
                                               <tr>
-                                                <th>
+                                                <th class="nome">
                                                   <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
                                                   Classe 81
                                                 </th>
-                                                <td>21 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>done</td>
+                                                <td class="data-inizio">21 febbraio 2021</td>
+                                                <td class="ROI">20%</td>
                                                 <td>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="badge text-bg-danger">failed</span>
+                                                </td>
+                                                <td>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
                                                 </td>
                                               </tr>
+                                              
                                               <tr>
-                                                <th>
+                                                <th class="nome">
                                                   <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
                                                   Classe 82
                                                 </th>
-                                                <td>22 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>done</td>
+                                                <td class="data-inizio">22 febbraio 2021</td>
+                                                <td class="ROI">20%</td>
                                                 <td>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border-2 border-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="badge text-bg-success">done</span>
+                                                </td>
+                                                <td>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
+                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
                                                 </td>
                                               </tr>
                                             </tbody>
@@ -347,7 +415,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4">
                             <div class="container-fluid">
                                 
                                 <div class="my-box border my-3">

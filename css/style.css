@@ -27,7 +27,11 @@ h2{
 }
 .my-bell{
    color: #ff8f00;
+
 }
+.my-bell:focus{
+    color: #ff8f00;
+ }
 
 /* MAIN */
 main{
@@ -44,7 +48,6 @@ main{
 aside{
     background-color: var(--bg-color-1);
     width: 150px;
-    min-height: 150px;
 }
 .my-admin{
     transition: 0.2s;
@@ -72,12 +75,18 @@ nav li:hover,
     background-color: rgba(255, 255, 255, 0.3);
     color: black;
 }
+.my-app-1 span:nth-child(2){
+    display: none;
+}
 
 /* prossime classi */
 table tbody tr:hover{
     cursor: pointer;
     background-color: var(--bg-color-gray-1);
-
+}
+table tbody td,
+table th:not(.nome){
+    text-align: center;
 }
 .my-symbol{
     background-color: orange;
@@ -92,10 +101,7 @@ table tbody tr:hover{
 /* RESPONSIVE */
 /* desktop -> tablet */
 @media screen and (max-width: 992px) {
-    section .row > div{
-        display: block;
-        width: 100%;
-    }
+
     aside{
         width: 60px;
         text-align: center;
@@ -103,12 +109,30 @@ table tbody tr:hover{
     main{
         width: calc(100% - 60px);
     }
-    a:not(.my-bell),
-    .my-logo-big{
+    #search-bar li:not(:last-child),
+    aside a,
+    .my-logo-big,
+    .my-app-2{
         display: none;
     }
-    .my-logo-small,
-    .my-badge-special{
+    .my-logo-small{
         display: block;
     }
+    .my-app-1 span:nth-child(2){
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .data-inizio{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:576px) {
+    .ROI{
+        display: none;
+    }
+    
 }
