@@ -17,13 +17,14 @@
         <div class="container-fluid">
 
             <div class="row align-items-center">
+                <!-- logo -->
                 <div class="col flex-grow-0">
                     <img src="img/logo.svg" class="my-logo-big" alt="logo">
                     <img src="img/mobile-logo.png" class="my-logo-small" alt="logo">
                 </div>
                 
+                <!-- barra di ricerca -->
                 <div class="col flex-grow-1">
-                    <!-- <input class="form-control" type="search" placeholder="Prova a cercare: Lezioni di Laravel"> -->
                     <form>
                       <div class="input-group">
                         <span class="input-group-text">
@@ -35,6 +36,7 @@
                     </form>
                 </div>
                 
+                <!-- input link -->
                 <div class="col flex-grow-0">
                     <ul class="d-flex">
                         <li class="px-2">
@@ -76,17 +78,18 @@
     <!-- INIZIO CONTENUTO PRINCIPALE -->
     <div id="main-content" class="d-flex">
 
-        <!-- contenuto sx -->
+        <!-- contenuto SX -->
         <aside>
             <div class="container-fluid h-100">
                 
+              <!-- parte top -->
                 <div class="row h-100 flex-column">
                     <nav class="col p-0">
                         <ul class=" text-white p-2 mt-4">
                             <li class="fs-5 p-2">
                                 <i class="fa-solid fa-house"></i>
                                 
-                                <a class="text-decoration-none text-white ps-2" href="Home">
+                                <a class="text-decoration-none text-white ps-2" href="#">
                                   Home
                                 </a>
                             </li>
@@ -94,7 +97,7 @@
                             <li class="fs-5 p-2">
                                 <i class="fa-solid fa-chart-simple"></i>
                                 
-                                <a class="text-decoration-none text-white ps-2" href="Stats">
+                                <a class="text-decoration-none text-white ps-2" href="#">
                                   Stats
                                 </a>
                             </li>
@@ -102,13 +105,14 @@
                             <li class="fs-5 p-2">
                                 <i class="fa-solid fa-signal"></i>
                                 
-                                <a class="text-decoration-none text-white ps-2" href="Signal">
+                                <a class="text-decoration-none text-white ps-2" href="#">
                                   Signal
                                 </a>
                             </li>
                         </ul>
                     </nav>
                     
+                    <!-- parte bottom -->
                     <div class="text-white p-2 mb-4">
                       <div class="my-admin fs-5 p-2">
                           <i class="fa-solid fa-gear"></i> 
@@ -123,37 +127,53 @@
             </div>
         </aside>
 
-        <!-- contenuto dx -->
+        <!-- contenuto DX -->
         <main>
           <!-- main header -->
             <header id="main-header">
                 <div class="container-fluid">
                     
+                  <!-- titolo boolean -->
                     <div class="row text-white py-4">
                       <div class="col-12 col-md-4 col-lg-6 pt-1">
                           <div class="my-title">
                             <h1 class="d-inline-block">Boolean</h1>
-                            <span class="my-badge badge rounded-pill fs-6 ms-2">Piano blaze</span>
+                            
+                            <span class="my-badge badge rounded-pill">
+                              <a href="#">Piano blaze</a>
+                            </span>
                           </div>
 
                           <div class="my-app d-flex">
                             <div class="my-app-1">
-                              <span class="my-badge badge mt-1 rounded-pill fs-6">3 app</span>
-                              <i class="fa-solid fa-angles-right"></i>
-                              <span class="my-badge badge mt-1 rounded-pill fs-6">
-                                <i class="fa-solid fa-plus"></i>
+                              <span class="my-badge badge mt-1 rounded-pill">
+                                <a href="#">3 app</a>
                               </span>
+                              
+                              <i class="fa-solid fa-angles-right"></i>
+                              
+                              <span class="my-badge app-plus badge my-2 rounded-pill">
+                                <a href="#"><i class="fa-solid fa-plus"></i></a>
+                              </span>  
                             </div>
 
                             <div class="my-app-2 ms-1">
-                              <span class="my-badge badge mt-1 rounded-pill fs-6">Boolean mobile app</span>
-                              <span class="my-badge badge mt-1 rounded-pill fs-6">Boolean web app</span>
-                              <span class="my-badge badge mt-1 rounded-pill fs-6">Boolean blog app</span>
+                              <span class="my-badge badge mt-1 rounded-pill">
+                                <a href="#">Boolean mobile app</a> 
+                              </span>
+                              
+                              <span class="my-badge badge mt-1 rounded-pill">
+                                <a href="#">Boolean web app</a> 
+                              </span>
+                              
+                              <span class="my-badge badge mt-1 rounded-pill">
+                                <a href="#">Boolean blog app</a>
+                              </span>
                             </div>
                           </div>
                         </div>
 
-                        
+                        <!-- numero studenti -->
                         <div class="col-12 col-md-4 col-lg-4">
                             <p class="fs-5 m-0">
                                 Studenti online negli ultimi 30 minuti
@@ -162,6 +182,7 @@
                             <span class="fs-1">125</span>
                         </div>
                         
+                        <!-- nuovo studente -->
                         <div class="col-12 order-first col-md-4 order-md-last col-lg-2 pt-1">
                             <p class="fs-5 d-inline-block">Nuovo studente</p>
 
@@ -169,13 +190,14 @@
                               <i class="fa-solid fa-plus"></i>
                             </button>
 
-                            <div class="offcanvas offcanvas-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas offcanvas-end text-dark" id="offcanvasRight">
+                              
                               <div class="offcanvas-header">
-                                <h5 class="offcanvas-title text-dark" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <h2 class="offcanvas-title fs-4" id="offcanvasRightLabel">Inserisci un nuovo studente</h2>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                               </div>
                               
-                              <div class="offcanvas-body text-dark">
+                              <div class="offcanvas-body">
                                 <div class="mb-3">
                                   <label for="nome" class="form-label">Nome</label>
                                   <input type="text" class="form-control" id="nome">
@@ -186,21 +208,62 @@
                                   <input type="text" class="form-control" id="cognome">
                                 </div>
 
-                                <div class="input-group flex-nowrap mb-3">
-                                  <span class="input-group-text" id="addon-wrapping">@</span>
-                                  <input type="mail" class="form-control" aria-label="Username">
+                                <div class="mb-3">
+                                  <label for="mail" class="form-label">Email</label>
+                                  <div class="input-group">
+                                    <span class="input-group-text" id="addon-wrapping">@</span>
+                                    <input type="mail" class="form-control" id="mail">
+                                  </div>
                                 </div>
 
                                 <div class="mb-3">
                                   <label for="password" class="form-label">password</label>
                                   <input type="password" class="form-control" id="password">
                                 </div>
+
+                                <div class="mb-3">
+                                  <label for="indirizzo" class="form-label">indirizzo</label>
+                                  <input type="text" class="form-control" id="indirizzo">
+                                </div>
+
+                                <div class="mb-3">
+                                  <label for="città" class="form-label">città</label>
+                                  <input type="text" class="form-control" id="città">
+                                </div>
+
+                                <div class="mb-3">
+                                  <label for="Stato" class="form-label">Stato</label>
+                                  <select class="form-select" aria-label="Default select example">
+                                    <option selected>scegli...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </div>
+
+                                <div class="mb-3">
+                                  <label for="CAP" class="form-label">CAP</label>
+                                  <input type="text" class="form-control" id="CAP">
+                                </div>
                                 
                                 <div class="mb-3">
-                                  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                  <label for="file" class="form-label">Foto</label>
+                                  <input class="form-control" type="file" id="file">
+                                </div>
+
+                                <div class="form-check mb-3">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Seleziona per proseguire
+                                  </label>
+                                </div>
+
+                                <div class="mb-3">
+                                  <button type="button" class="btn btn-primary">Salva</button>
+                                  <button type="button" class="btn btn-warning">Svuota</button>
                                 </div>
                               </div>
+                            
                             </div>
                         </div>
                     </div>
@@ -234,129 +297,209 @@
                                             <tbody>
                                               <tr>
                                                 <th class="nome">
-                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
-                                                  Classe 75
+                                                  <span class="my-symbol d-inline-block text-white me-2 p-1 rounded-circle">
+                                                    <i class="fa-solid fa-code"></i>
+                                                  </span>Classe 75
                                                 </th>
+
                                                 <td class="data-inizio">15 febbraio 2021</td>
+                                                
                                                 <td class="ROI">20%</td>
+                                                
                                                 <td>
                                                   <span class="badge text-bg-success">done</span>
                                                 </td>
+                                                
                                                 <td>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                  </span>
+                                                  
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                  </span>
                                                 </td>
                                               </tr>
                                               
                                               <tr>
                                                 <th class="nome">
-                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
-                                                  Classe 76
+                                                  <span class="my-symbol d-inline-block text-white me-2 p-1 rounded-circle">
+                                                    <i class="fa-solid fa-code"></i>
+                                                  </span>Classe 76
                                                 </th>
+
                                                 <td class="data-inizio">16 febbraio 2021</td>
+                                                
                                                 <td class="ROI">20%</td>
+                                                
                                                 <td>
                                                   <span class="badge text-bg-success">done</span>
                                                 </td>
+                                                
                                                 <td>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                  </span>
+                                                  
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                  </span>
                                                 </td>
                                               </tr>
                                               
                                               <tr>
                                                 <th class="nome">
-                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
-                                                  Classe 77
+                                                  <span class="my-symbol d-inline-block text-white me-2 p-1 rounded-circle">
+                                                    <i class="fa-solid fa-code"></i>
+                                                  </span>Classe 77
                                                 </th>
+
                                                 <td class="data-inizio">17 febbraio 2021</td>
+                                                
                                                 <td class="ROI">20%</td>
+                                                
                                                 <td>
-                                                  <span class="badge text-bg-warning">process</span>
+                                                  <span class="badge text-bg-warning text-white">process</span>
                                                 </td>
+                                                
                                                 <td>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                  </span>
+                                                  
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                  </span>
                                                 </td>
                                               </tr>
                                               
                                               <tr>
                                                 <th class="nome">
-                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
-                                                  Classe 78
+                                                  <span class="my-symbol d-inline-block text-white me-2 p-1 rounded-circle">
+                                                    <i class="fa-solid fa-code"></i>
+                                                  </span>Classe 78
                                                 </th>
+
                                                 <td class="data-inizio">18 febbraio 2021</td>
+                                                
                                                 <td class="ROI">20%</td>
+                                                
                                                 <td>
                                                   <span class="badge text-bg-success">done</span>
                                                 </td>
+                                                
                                                 <td>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                  </span>
+                                                  
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                  </span>
                                                 </td>
                                               </tr>
                                               
                                               <tr>
                                                 <th class="nome">
-                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
-                                                  Classe 79
+                                                  <span class="my-symbol d-inline-block text-white me-2 p-1 rounded-circle">
+                                                    <i class="fa-solid fa-code"></i>
+                                                  </span>Classe 79
                                                 </th>
+
                                                 <td class="data-inizio">19 febbraio 2021</td>
+                                                
                                                 <td class="ROI">20%</td>
+                                                
                                                 <td>
                                                   <span class="badge text-bg-danger">failed</span>
                                                 </td>
+                                                
                                                 <td>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                  </span>
+                                                  
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                  </span>
                                                 </td>
                                               </tr>
                                               
                                               <tr>
                                                 <th class="nome">
-                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
-                                                  Classe 80
+                                                  <span class="my-symbol d-inline-block text-white me-2 p-1 rounded-circle">
+                                                    <i class="fa-solid fa-code"></i>
+                                                  </span>Classe 80
                                                 </th>
+
                                                 <td class="data-inizio">20 febbraio 2021</td>
+                                                
                                                 <td class="ROI">20%</td>
+                                                
                                                 <td>
                                                   <span class="badge text-bg-success">done</span>
                                                 </td>
+                                                
                                                 <td>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                  </span>
+                                                  
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                  </span>
                                                 </td>
                                               </tr>
                                               
                                               <tr>
                                                 <th class="nome">
-                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
-                                                  Classe 81
+                                                  <span class="my-symbol d-inline-block text-white me-2 p-1 rounded-circle">
+                                                    <i class="fa-solid fa-code"></i>
+                                                  </span>Classe 81
                                                 </th>
+
                                                 <td class="data-inizio">21 febbraio 2021</td>
+                                                
                                                 <td class="ROI">20%</td>
+                                                
                                                 <td>
                                                   <span class="badge text-bg-danger">failed</span>
                                                 </td>
+                                                
                                                 <td>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                  </span>
+                                                  
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                  </span>
                                                 </td>
                                               </tr>
                                               
                                               <tr>
                                                 <th class="nome">
-                                                  <span class="my-symbol me-2 p-1 rounded-circle"><i class="fa-solid fa-code"></i></span> 
-                                                  Classe 82
+                                                  <span class="my-symbol d-inline-block text-white me-2 p-1 rounded-circle">
+                                                    <i class="fa-solid fa-code"></i>
+                                                  </span>Classe 82
                                                 </th>
+
                                                 <td class="data-inizio">22 febbraio 2021</td>
+                                                
                                                 <td class="ROI">20%</td>
+                                                
                                                 <td>
                                                   <span class="badge text-bg-success">done</span>
                                                 </td>
+                                                
                                                 <td>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-pen"></i></span>
-                                                  <span class="p-1 border border border-secondary text-secondary"><i class="fa-solid fa-trash"></i></td></span>
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                  </span>
+                                                  
+                                                  <span class="d-inline-block p-1 border border-secondary rounded-1 text-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                  </span>
                                                 </td>
                                               </tr>
                                             </tbody>
@@ -405,7 +548,9 @@
                                               </h3>
                                               
                                               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body"></div>
+                                                <div class="accordion-body">
+                                                  Di solito è inusuale usare dashboard del genere da mobile, ma i nostri sviluppatori hanno fatto di tutto per permettere un'esperienza utente accettabile anche da dispositivo a schermi ridotti.
+                                                </div>
                                               </div>
                                             </div>
                                         </div>
@@ -415,6 +560,7 @@
                             </div>
                         </div>
                         
+                        <!-- todo -->
                         <div class="col-12 col-lg-4">
                             <div class="container-fluid">
                                 
@@ -445,6 +591,7 @@
                                     </div>
                                 </div>
                                 
+                                <!-- stats -->
                                 <div class="my-box border my-3">
                                     <div class="my-box-content p-3">
                                         <ul class="border">
@@ -479,24 +626,6 @@
             </section>
         </main>
 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                       
-                        
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>

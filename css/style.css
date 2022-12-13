@@ -43,7 +43,7 @@ main{
     background-color: var(--bg-color-3);
 }
 
-/* contenuto sx */
+/* contenuto SX */
 /* aside */
 aside{
     background-color: var(--bg-color-1);
@@ -61,10 +61,14 @@ nav li:hover,
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* contenuto dx */
+/* contenuto DX */
 /* main header */
 #main-header{
     background-color: var(--bg-color-2);
+}
+#main-header a{
+    text-decoration: none;
+    color: white;
 }
 .my-badge{
     background-color: rgba(0, 0, 0, 0.3);
@@ -73,33 +77,31 @@ nav li:hover,
 .my-badge:hover{
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.3);
-    color: black;
 }
-.my-app-1 span:nth-child(2){
+.app-plus{
     display: none;
 }
 
 /* prossime classi */
 table tbody tr:hover{
     cursor: pointer;
-    background-color: var(--bg-color-gray-1);
+    background-color: lightgray;
 }
 table tbody td,
 table th:not(.nome){
     text-align: center;
 }
 .my-symbol{
-    background-color: orange;
+    background-color: #f26551;
 }
 
 
-/* DEBUG */
 
 
 
 
 /* RESPONSIVE */
-/* desktop -> tablet */
+/* extralarge-> large */
 @media screen and (max-width: 992px) {
 
     aside{
@@ -118,11 +120,12 @@ table th:not(.nome){
     .my-logo-small{
         display: block;
     }
-    .my-app-1 span:nth-child(2){
+    .app-plus{
         display: inline-block;
     }
 }
 
+/* large -> medium */
 @media screen and (max-width:768px) {
     .data-inizio{
         display: none;
@@ -130,6 +133,7 @@ table th:not(.nome){
     
 }
 
+/* medium -> small */
 @media screen and (max-width:576px) {
     .ROI{
         display: none;
